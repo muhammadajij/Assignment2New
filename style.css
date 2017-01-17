@@ -1,0 +1,367 @@
+
+/*home*/
+
+body {
+	background-color: #D8D8D8;
+	/*color: #000305;*/
+	font-size: 95.5%; /*7.5% of 14px*/
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #CF5C3F;
+
+}
+
+a:hover, a:active {
+	background-color: #CF5C3F;
+	color: #FFF;
+}
+
+.body {
+	margin: 0 auto;
+	width: 70%;
+	clear: both; /*no floating*/
+}
+
+/*.slideshow {
+	max-width 50px; //not working?
+	height auto;
+	margin 2% 0%;
+}*/
+
+
+.title {
+	font-weight: bold;
+ 	text-shadow: 0 0 10px #CF5C3F;  	
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	float: left;
+	color: #FFF;
+	width: 20%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background-color: #666;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px; /*visible on mozilla browser*/
+	-webkit-border-radius: 5px; border /*visible on webkit based browser*/
+
+}
+
+.title p {
+	margin: 4.5% 0% 0% 13%;
+}
+
+
+.mainHeader nav {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 40%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	float: right;
+	background-color: #666;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px; /*visible on mozilla browser*/
+	-webkit-border-radius: 5px; border /*visible on webkit based browser*/
+}
+
+.mainHeader nav ul {
+	list-style: none; /*gets rid of bullet points infont of the names*/
+	margin: 0 auto;
+}
+
+.mainHeader ul li {
+	float: left;
+	display: inline;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	background-color:#CF5C3F;
+	text-shadow: none;
+}
+
+.mainHeader nav ul li a {
+	border-radius: 5px;
+	float: left;
+	-moz-border-radius: 5px; /*visible on mozilla browser*/
+	-webkit-border-radius: 5px; border /*visible on webkit based browser*/
+}
+
+.mainContent {
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px; /*visible on mozilla browser*/
+	-webkit-border-radius: 5px; border /*visible on webkit based browser*/
+}
+
+.content {
+	width: 70%;
+	float: left;
+	
+}
+
+.topContent, .middleContent, .bottomContent {
+	background-color: #FFF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 3% 5%;
+	margin-top: 2%;
+	border-radius: 5px;
+	-moz-border-radius: 5px; /*visible on mozilla browser*/
+	-webkit-border-radius: 5px;  /*visible on webkit based browser*/
+}
+
+.top-sidebar, .middle-sidebar, .bottom-sidebar {
+	width: 22%;
+	float: left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #FFF; 
+	border-radius: 5px;
+	-moz-border-radius: 5px; /*visible on mozilla browser*/
+	-webkit-border-radius: 5px;  /*visible on webkit based browser*/
+	margin-left: 2%;
+	margin-top: 2%;
+	padding: 2% 3%;
+
+}
+
+.postinfo {
+	font-style: italic;
+	color: #999;
+	font-size: 90%;
+}
+
+.mainFooter {
+	width: 100%; /*1% = 10px*/
+	height: 40px;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px; /*visible on mozilla browser*/
+	-webkit-border-radius: 5px;  /*visible on webkit based browser*/
+	background-color: #666;
+	margin-top: 2%;
+}
+
+.mainFooter p {
+	width: 92%;
+	margin: 1% auto;
+	color: #FFF;
+
+}
+
+/*portfolio*/
+
+#imgs img 
+{
+    /*overlays all the imgs */
+    /*You see only the first img, for now*/
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: 1s;
+    visibility:hidden;
+    /* want to show only 1 img at the time*/
+}
+/*the container */
+#Snav 
+{
+    display:block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+/* where the circles are going to be*/
+#SnavUp 
+{
+    display:block;
+    width:100%;
+    height:20%;
+}
+#Scircles 
+{
+    display:block;
+    width:5%;
+    height:15%;
+    margin-right:5%;
+    margin-top:2%;
+    float:right;        /* is going to be on the right side of the slider*/
+}
+#Scircles ul 
+{
+    margin:0;
+    float:right;
+    display:block;
+    width:100%;
+    height:100%;
+}
+#Scircles li
+{
+    list-style:none;
+    display:block;
+    background-color:rgba(0, 0, 0, 1);
+    width:25%;
+    height:90%;
+    margin-left:5%;
+    float:left;     /*on the same line*/
+    visibility:hidden;
+    /*we need circles, not squares*/
+    border-bottom-left-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+}
+
+#SnavMiddle 
+{
+    display:block;
+    width:100%;
+    height:15%;
+    margin-top:10%;     
+}
+
+/*left button*/
+#Sleft 
+{
+    width:8%;
+    height:100%;
+    float:left;
+    margin-left:3%;
+    opacity:0.8;
+}
+
+/*button effect*/
+#Sleft:hover 
+{
+    opacity:0.8;
+
+}
+
+#Sright 
+{
+    width:8%;
+    height:100%;
+    float:right;
+    margin-right:3%;
+    opacity:0.8;
+}
+
+#Sright:hover 
+{
+    opacity:0.8;
+   	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/*now we have to add the info at the bottom of the slider*/
+#SnavBottom 
+{
+    display:block;
+    background-color:rgba(0, 0, 0, 0.8);
+    width:100%;
+    height:10%;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+#SnavBottom p 
+{
+    font:normal 200% Arial;
+    color:#fff;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-left:3%;
+    visibility:hidden;
+}
+
+/*home small size*/
+
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+
+
+.body {
+	width: 90%;
+	font-size: 95%;
+}
+
+/*.mainHeader img {
+	width 100%;
+	margin-bottom: 1%;
+}*/
+
+.mainHeader nav {
+	margin-bottom: 4%;
+	width: 100%;
+	height: 160px;
+}
+
+.mainHeader nav ul {
+	padding-left: 0;
+}
+
+.mainHeader ul li {
+	width: 100%;
+	text-align: center;
+} 
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	display: block;
+	width: 88.75%;
+}
+
+.content {
+	width: 100%;
+	
+}
+
+.top-sidebar, .middle-sidebar, .bottom-sidebar {
+	width: 94%;
+	margin-left: 0%;
+	margin-top: 2%;
+	padding: 2% 3%;
+
+}
+
+.postinfo {
+	display: none;
+}
+
+.title {
+	width: 100%;
+	height: 70px;
+}
+
+.title p {
+	text-align: center;
+	margin-right: 12%;
+	margin-top: 6%;
+
+}
+
+
+
+
+
+
+
+
+

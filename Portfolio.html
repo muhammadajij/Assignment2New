@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    
+    <title></title>
+</head>
+<body onload="Load()">
+    <header>
+        <img id="img" src="./images/home.png"/>
+    </header>
+    <div id="slider">
+        <div id="imgs">
+            <!-- here you have to add the img tag -->
+            <img id="Img1" src="./images/supportimage1.jpg"/>
+            <img id="Img2" src="./images/supportimage2.jpg"/>
+            <img id="Img3" src="./images/supportimage2.jpg"/>
+         </div>
+        <!--Here is going to be the left right buttons, the info and the imgs shown-->
+        <div id="Snav">
+            <!-- here is the circles , showes the current img -->
+            <div id="SnavUp">
+                <div id="Scircles">
+                    <ul>
+                        <li id="S0"></li>
+                        <li id="S1"></li>
+                        <li id="S2"></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- the left and right button -->
+            <div id="SnavMiddle">
+                <img id="Sleft" src="./images/left.png" onclick="prev()"/>
+                <img id="Sright" src="./images/right.png" onclick="next()"/>
+            </div>
+            <!-- the info -->
+            <div id="SnavBottom">
+                <!-- here you have to add the p tag-->
+                <p id="SP0">Support Image 1</p>
+                <p id="SP1">Support Image 2</p>
+                <p id="SP2">Support Image 3</p>
+            </div>
+        </div>
+    </div>
+        <script src="javascript.js"></script>
+
+</body>
+</html>
