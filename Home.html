@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-	<title>Support Solutions</title>
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ -->	<title>Support Solutions</title>
 	<meta charset="utf-8"/>
 
 	<link rel="stylesheet" href="style.css" type="text/css" />
@@ -10,7 +11,7 @@
 </head>
 
 <body onload="autoRun()" class="body">
-
+<div id=animation>
 	<header>
 
 			<div class="title">
@@ -18,7 +19,7 @@
 			</div>
 
 			<div class="searchbar">
-				<form class="tfnewsearch" method="get" action="http://www.google.com">
+				<form class="tfnewsearch" method="get" action="http://www.google.co.uk">
 				        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
 				</form>
 				<div class="tfclear"></div>
@@ -28,14 +29,10 @@
 			<div class="mainHeader">
 
 			<nav><ul>
-				<!-- <p class="title">SUPPORT SOLUTIONS</p> -->
-
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="Portfolio.html">Portfolio</a></li>
-				<li><a href="#">Contact</a></li>
-
-
+				<li class="active"><a href="Home.html"> <i class="fa fa-home fa-lg white-txt" aria-hidden="true"></i> Home</a></li>
+				<li><a href="#"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i> About</a></li>
+				<li><a href="Portfolio.html"><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i> Portfolio</a></li>
+				<li><a href="#"><i class="fa fa-phone fa-lg"  aria-hidden="true"></i> Contact</a></li>
 			</ul></nav>
 
 			</div>			
@@ -54,18 +51,18 @@
 
 			.searchbar{
 				width: 50%;
-				float: left;
+				float: right;
 			}
 
 			.tfnewsearch{
-		    	margin-left: 2.25%;
-		    	margin-top: 1.5%;
+		    	margin-left: 27%;
+		    	margin-top: 1.75%;
 		    	margin-bottom: -15%;
 				padding:20px;
 			}
 
 			.tftextinput{
-			width: 55%;
+			width: 74%;
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			margin: 0;
 			padding: 5px 15px;
@@ -185,7 +182,8 @@
 	</footer>
 
 	<script src="javascript.js"></script>
-
+    <script src="https://use.fontawesome.com/34223f476a.js"></script>
+</div>
 </body>
 
 </html>	

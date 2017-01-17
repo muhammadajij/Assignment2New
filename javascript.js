@@ -99,3 +99,17 @@ function Effect()
             document.getElementById("SP" + nrShown).style.visibility = "visible";
         }
 
+    //slideshow home button
+function home(){
+    window.location.href='Home.html';
+
+}
+
+// $(document).ready(function(){
+//     $("#H").click(function(){
+//         $("#animation").fadeTo("slow", 0);
+//     });
+// });
+
+
+
