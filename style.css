@@ -74,6 +74,22 @@ a:hover, a:H {
 	margin: 4% 0% 0% 17%;
 }
 
+.content article header h2 p {
+	color:#666;
+}
+
+.top-sidebar article h2 {
+	color:#666;
+}
+
+.middle-sidebar article h2 {
+	color:#666;
+}
+
+.bottom-sidebar article h2 {
+	color:#666;
+}
+
 
 .mainHeader nav {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -84,6 +100,7 @@ a:hover, a:H {
 	float: left;
 	background-color: #666;
 	height: 40px;
+
 	border-radius: 5px;
 	-moz-border-radius: 5px; /*visible on mozilla browser*/
 	-webkit-border-radius: 5px; border /*visible on webkit based browser*/
@@ -129,6 +146,7 @@ a:hover, a:H {
 .content {
 	width: 70%;
 	float: left;
+	margin-top: -1%; 
 	
 }
 
@@ -151,7 +169,7 @@ a:hover, a:H {
 	-moz-border-radius: 5px; /*visible on mozilla browser*/
 	-webkit-border-radius: 5px;  /*visible on webkit based browser*/
 	margin-left: 2%;
-	margin-top: 2%;
+	margin-top: 1%;
 	padding: 2% 3%;
 
 }
@@ -179,6 +197,42 @@ a:hover, a:H {
 	color: #FFF;
 
 }
+
+.arrow, .arrowup {
+	float: right;
+}
+
+.arrow2, .arrowup2 {
+	float: right;
+}
+
+.arrow3, .arrowup3 {
+	float: right;
+}
+
+/*.fixed {
+	margin-top: -1.5%;
+	position: fixed;
+	width: 80%;
+}*/
+
+.arrow i:hover, .arrowup i:hover {
+	color: #373737
+}
+
+.arrow2 i:hover, .arrowup2 i:hover{
+	color: #373737
+}
+
+.arrow3 i:hover, .arrowup3 i:hover{
+	color: #373737
+}
+
+#home i:hover {
+	color: #DEDADA
+}
+
+
 
 /*portfolio*/
 
@@ -320,6 +374,9 @@ a:hover, a:H {
 }
 
 
+.grey-txt{
+	color: #666;
+}
 
 .white-txt{
 	color: #fff; 
@@ -339,11 +396,6 @@ a:hover, a:H {
 	width: 90%;
 	font-size: 95%;
 }
-
-/*.mainHeader img {
-	width 100%;
-	margin-bottom: 1%;
-}*/
 
 .mainHeader nav {
 	margin-bottom: 4%;

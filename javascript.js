@@ -105,6 +105,51 @@ function home(){
 
 }
 
+$(document).ready(function()
+
+            {   $(".detail").hide()
+
+            $(".arrow").click(function()
+            {
+                $(".detail").show(500);
+            })
+
+            $(".arrowup").click(function()
+            {
+                $(".detail").hide(500);
+            }
+
+            );
+
+               $(".detail2").hide()
+
+            $(".arrow2").click(function()
+            {
+                $(".detail2").show(500);
+            })
+
+            $(".arrowup2").click(function()
+            {
+                $(".detail2").hide(500);
+            }
+
+            );
+
+               $(".detail3").hide()
+
+            $(".arrow3").click(function()
+            {
+                $(".detail3").show(500);
+            })
+
+            $(".arrowup3").click(function()
+            {
+                $(".detail3").hide(500);
+            }
+
+            );
+        });
+
 // $(document).ready(function(){
 //     $("#H").click(function(){
 //         $("#animation").fadeTo("slow", 0);
