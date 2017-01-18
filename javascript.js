@@ -1,4 +1,4 @@
-
+<!-- Muhammad Ajij - P13230501 -->
 
 // Home
 var images = ["./images/supportimage1.jpg", "./images/supportimage2.jpg"];
