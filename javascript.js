@@ -4,7 +4,6 @@
 var images = ["./images/supportimage1.jpg", "./images/supportimage2.jpg"];
 // var caption = ["caption for slide1", "caption for slide2"];
 
-
 var imageNumber = 0;
 var imageLength = images.length - 1;
 

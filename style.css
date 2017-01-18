@@ -12,8 +12,6 @@ body {
     animation-duration: 1s;
 }
 
-
-
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes fade {
     from {opacity: 0}
