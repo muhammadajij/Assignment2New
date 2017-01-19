@@ -32,13 +32,13 @@ body {
 	padding:280px 0;
 	height: 200px;
 	margin-top: -7%;
+	margin-bottom: 20%;
 }
 
 .logo{
-	width:px;
+	width: 25%;
 	margin:0 auto;
 }
-
 
 
 .hone{
@@ -57,6 +57,7 @@ body {
 
 .we-create li{
 	color: #FFF;
+	list-style: none; /*gets rid of bullet points infont of the names*/
 }
 
 .link{
@@ -125,7 +126,7 @@ a:hover, a:H {
 	width: 20%;
 	margin-top: 2%;
 	margin-bottom: 2%;
-	background-color: #666;
+	background-color: #7cc576;
 	height: 40px;
 	border-radius: 5px;
 	-moz-border-radius: 5px; /*visible on mozilla browser*/
@@ -134,8 +135,18 @@ a:hover, a:H {
 }
 
 .title a p {
-	margin: 4% 0% 0% 17%;
-	color:#7cc576;
+	margin: 4% 0% 0% 0%;
+	color:#FFF;
+	float: left;
+}
+
+
+.supportlogo2 {
+	width: 11%;
+	float: left;
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-right: 5%;
 }
 
 .content article header h2 p {
@@ -162,7 +173,7 @@ a:hover, a:H {
 	margin-bottom: 2%;
 	margin-left: 1.25%;
 	float: left;
-	background-color: #666;
+	background:url(./images/pw_maze_black_2X.png) left top repeat;
 	height: 40px;
 
 	border-radius: 5px;
@@ -258,7 +269,7 @@ transition:all 0.3s ease-in-out;
 	border-radius: 5px;
 	-moz-border-radius: 5px; /*visible on mozilla browser*/
 	-webkit-border-radius: 5px;  /*visible on webkit based browser*/
-	background-color: #666;
+	background-color: #7cc576;
 	margin-top: 2%;
 }
 
@@ -288,15 +299,15 @@ transition:all 0.3s ease-in-out;
 }*/
 
 .arrow i:hover, .arrowup i:hover {
-	color: #373737
+	color: #7cc576
 }
 
 .arrow2 i:hover, .arrowup2 i:hover{
-	color: #373737
+	color: #7cc576
 }
 
 .arrow3 i:hover, .arrowup3 i:hover{
-	color: #373737
+	color: #7cc576
 }
 
 #home i:hover {
