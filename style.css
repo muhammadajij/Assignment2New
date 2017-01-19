@@ -232,6 +232,122 @@ a:hover, a:H {
 	color: #DEDADA
 }
 
+/*contact*/
+
+#contactbody{
+	overflow:hidden;
+}
+
+#popupdiv {
+	width:100%;
+	height:100%;
+	opacity:.95;
+	top:0;
+	left:0;
+	display:none;
+	position:fixed;
+	background-color:#313131;
+	overflow:auto
+}
+#close {
+	position:absolute;
+	margin-left: 79.75%;
+	margin-top:-3%;
+}
+
+#close i:hover {
+	color: #DEDADA
+}
+
+#popupContact {
+	position:absolute;
+	left:50%;
+	top:17%;
+	margin-left:-202px;
+
+}
+
+#cform {
+	max-width:300px;
+	min-width:250px;
+	padding:10px 50px;
+	border:2px solid gray;
+	border-radius:10px;
+	font-family:raleway;
+	background-color:#fff
+}
+
+#htwo2 {
+	background-color:#666;
+	padding:20px 35px;
+	color: #FFF;
+	margin:-10px -50px;
+	text-align:center;
+	border-radius:10px 10px 0 0;
+}
+
+#cform hr {
+	margin:10px -50px;
+	border:0;
+	border-top:1px solid #ccc;
+}
+
+#cform input {
+	width:82%;
+	padding:10px;
+	margin-top:30px;
+	border:1px solid #ccc;
+	padding-left:40px;
+	font-size:16px;
+}
+
+/*#name {
+	
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#email {
+	
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}*/
+
+
+#msg {
+	
+	width:82%;
+	height:95px;
+	padding:10px;
+	resize:none;
+	margin-top:30px;
+	border:1px solid #ccc;
+	padding-left:40px;
+	font-size:16px;
+margin-bottom:30px;
+/*	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*/
+}
+
+#submit {
+	text-decoration:none;
+	width:100%;
+	text-align:center;
+	display:block;
+	background-color:#666;
+	color:#FFF;
+	border:1px solid #666;
+	padding:10px 0;
+	font-size:20px;
+	cursor:pointer;
+	border-radius:5px;
+
+}
+
+#submit:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
 
 
 /*portfolio*/
@@ -239,7 +355,6 @@ a:hover, a:H {
 #imgs img 
 {
     /*overlays all the imgs */
-    /*You see only the first img, for now*/
     width:100%;
     height:100%;
     position:absolute;
@@ -247,7 +362,6 @@ a:hover, a:H {
     left:0;
     transition: 1s;
     visibility:hidden;
-    /* want to show only 1 img at the time*/
 }
 /*the container */
 #Snav 
@@ -341,7 +455,6 @@ a:hover, a:H {
 
 }
 
-/*now we have to add the info at the bottom of the slider*/
 #SnavBottom 
 {
     display:block;
@@ -383,10 +496,6 @@ a:hover, a:H {
 
 }
 
-#home:hover{
-		 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
-
-}
 /*home small size*/
 
 @media only screen and (min-width: 150px) and (max-width: 600px) {

@@ -150,6 +150,25 @@ $(document).ready(function()
             );
         });
 
+// Validating Empty Field
+function check_empty() {
+if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+alert("Fill All Fields !");
+} else {
+document.getElementById('form').submit();
+alert("Form Submitted Successfully...");
+}
+}
+//Function To Display Popup
+function div_show() {
+//window.location.href='Home.html'
+document.getElementById('popupdiv').style.display = "block";
+}
+//Function to Hide Popup
+function div_hide(){
+document.getElementById('popupdiv').style.display = "none";
+}
+
 // $(document).ready(function(){
 //     $("#H").click(function(){
 //         $("#animation").fadeTo("slow", 0);
