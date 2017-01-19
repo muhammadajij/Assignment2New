@@ -105,6 +105,11 @@ function home(){
 
 }
 
+function landing(){
+    window.location.href='Landing.html';
+
+}
+
 $(document).ready(function()
 
             {   $(".detail").hide()

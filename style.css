@@ -4,7 +4,7 @@
 /*home*/
 
 body {
-	background-color: #D8D8D8;
+	background:url(./images/pw_maze_black_2X.png) left top repeat;
 	/*color: #000305;*/
 	font-size: 95.5%; /*7.5% of 14px*/
 	font-family: Arial, 'Lucida Sans Unicode';
@@ -25,6 +25,69 @@ body {
     from {opacity: 0}
     to {opacity: 1;}
 }
+
+.lheader{
+	text-align:center;
+	background:url(./images/pw_maze_black_2X.png) left top repeat;
+	padding:280px 0;
+	height: 200px;
+	margin-top: -7%;
+}
+
+.logo{
+	width:px;
+	margin:0 auto;
+}
+
+
+
+.hone{
+	font-family: 'Montserrat',sans-serif;
+	font-size:50px;
+	font-weight:400;
+	letter-spacing: -1px;
+	margin:0 0 22px 0 ;
+	color:#fff;
+}
+
+.we-create{
+	padding:0;
+	margin:35px 0 55px;
+}
+
+.we-create li{
+	color: #FFF;
+}
+
+.link{
+	padding:15px 35px;
+	background:#7cc576;
+	color:#fff !important;
+	font-size:16px;
+	font-weight:400;
+	font-family: 'Montserrat', sans-serif;
+	display:inline-block;
+	border-radius:3px;
+	text-transform:uppercase;
+	line-height:25px;
+	margin-bottom:20px;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+.link:hover {
+	text-decoration:none;
+	color:#7cc576 !important;
+	background:#fff;
+}
+
+.link:active, .link:focus {
+	background: #7cc576;
+	text-decoration:none;
+	color:#fff !important;
+}
+
+
 
 a {
 	text-decoration: none;
@@ -55,9 +118,9 @@ a:hover, a:H {
 
 .title {
 	font-weight: bold;
- 	text-shadow: 0 0 10px #CF5C3F;  	
- 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	float: left;
+ 	text-shadow: 0 0 10px #FFF;  	
+/* 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*/	float: left;
 	color: #FFF;
 	width: 20%;
 	margin-top: 2%;
@@ -70,8 +133,9 @@ a:hover, a:H {
 
 }
 
-.title p {
+.title a p {
 	margin: 4% 0% 0% 17%;
+	color:#7cc576;
 }
 
 .content article header h2 p {
@@ -117,16 +181,23 @@ a:hover, a:H {
 }
 
 .mainHeader nav a:link, .mainHeader nav a:visited {
-	color: #FFF;
+	color:#fff !important;
 	display: inline-block;
 	padding: 10px 25px;
 	height: 20px;
+		background:#7cc576;
+
+transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
 }
+
 
 .mainHeader nav a:hover, .mainHeader nav a:active,
 .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-	background-color:#CF5C3F;
-	text-shadow: none;
+	text-decoration:none;
+	color:#7cc576 !important;
+	background:#fff;
 }
 
 .mainHeader nav ul li a {
