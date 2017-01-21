@@ -2,7 +2,7 @@
 
 
 // Home
-var images = ["./images/supportimage1.jpg", "./images/supportimage2.jpg"];
+var images = ["./images/supportimage1.jpg"];
 // var caption = ["caption for slide1", "caption for slide2"];
 
 var imageNumber = 0;
@@ -100,10 +100,21 @@ function Effect()
         }
 
 
-$('#link').click(function(event) {
-     event.preventDefault();
-   $.scrollTo($('.title'), 1000);
-});
+// $('#link').click(function(event) {
+//      event.preventDefault();
+//    $.scrollTo($('.title'), 1000);
+// });
+
+   //slideshow home button
+function home(){
+    window.location.href='Home.html';
+
+}
+
+// function landing(){
+//     window.location.href='Landing.html';
+
+// }
 
 $(document).ready(function()
 
@@ -179,23 +190,56 @@ $(document).ready(function()
 
             $(".link").click(function()
             {
-                $(".mainHeader").show(200);
-                $(".mainContent").show(1500);
-                 $(".title").show(900);
-                 $(".searchbar").show(100);
-                $("#slideshow").show(1100);
+                $(".mainHeader").show(300);
+                $(".mainContent").show(500);
+                 $(".title").show(300);
+                 $(".searchbar").show(300);
+                $("#slideshow").show(300);
 
-                $(".sidebars").show(1500);
-                $(".lheader").hide();
+                $(".sidebars").show(500);
+                $(".lheader").hide(1000);
 
 
             }
             );
 
+            $("#land").click(function()
+            {
+
+                $(".mainHeader").hide();
+                $(".mainContent").hide();
+                 $(".title").hide();
+                 $(".searchbar").hide();
+                $("#slideshow").hide();
+
+                $(".sidebars").hide();
+                $(".lheader").show(800);
+
+
+            }
+            );
+
+
+            // $(".port").click(function()
+            // {
+
+            //     $(".mainHeader").hide(700);
+            //     $(".mainContent").hide(700);
+            //      $(".title").hide(700);
+            //      $(".searchbar").hide(700);
+            //     $("#slideshow").hide(700);
+            //     $("#slider").hide();
+
+            //     $(".sidebars").hide();
+            //     $("#slider").show(800);
+
+
+            // }
+            // );
+
             $("#home").click(function()
             {
 
-                window.location.href='Home.html';
                 $(".mainHeader").show(200);
                 $(".mainContent").show(1500);
                  $(".title").show(900);
@@ -214,10 +258,11 @@ $(document).ready(function()
 function check_empty() {
 if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
 alert("Fill All Fields !");
-} else {
-document.getElementById('form').submit();
-alert("Form Submitted Successfully...");
-}
+} 
+// else {
+// document.getElementById('form').submit();
+// alert("Form Submitted Successfully...");
+//}
 }
 //Function To Display Popup
 function div_show() {
@@ -239,11 +284,61 @@ document.getElementById('popupdiv').style.display = "none";
 
 
 
+// var info = [
+//   {
+//     "message": document.getElementById('message').placeholder
+//   }
+// ];
+
+// function addJSON() {
+//     var nameval = document.getElementById('name').value;
+//     var messageval = document.getElementById('message').placeholder;
+//     var newmessage = messageval + " " + nameval;
+//     var newObject = {
+//         "message": newmessage
+//     };
+//     info.push(newObject);
+// }
+
 // $(document).ready(function(){
 //     $("#H").click(function(){
 //         $("#animation").fadeTo("slow", 0);
 //     });
 // });
+
+// var nameval = document.getElementById('name').value;
+
+// var obj = JSON.parse({ "name": "document.getElementById('name').value" });
+// document.getElementById("demo").innerHTML = "Hello " + obj.name;
+
+
+// function myFunction() {
+
+//     var nameval = document.getElementById("name").innerHTML;
+
+//     document.getElementById("demo").innerHTML = ;
+// }
+
+
+//USE OF JSON
+function myFunction() {
+
+var nameval = document.getElementById("name").value;
+var snameval = document.getElementById("sname").value;
+
+// var obj{};
+// obj['name'] = nameval;
+// obj['surname'] = surname;
+
+// var x = obj.name;
+// var y = obj.surname;
+
+document.getElementById("demo").innerHTML =  alert("Thank You " + nameval + " " + snameval + " For Your Message Please Close The Contact Form");
+
+}
+
+
+
 
 
 
