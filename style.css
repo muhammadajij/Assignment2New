@@ -661,12 +661,12 @@ margin-bottom:30px;
 
 /*home small size*/
 
-@media only screen and (min-width: 150px) and (max-width: 600px) {
+@media only screen and (min-width: 150px) and (max-width: 700px) {
 
 
 .body {
 	width: 90%;
-	font-size: 95%;
+	font-size: 80%;
 }
 
 .mainHeader nav {
@@ -716,9 +716,71 @@ margin-bottom:30px;
 
 }
 
+.searchbar, .tfnewsearch {
+		display: none;
+
+}
+
+}
 
 
 
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+
+
+.body {
+	width: 95%;
+	font-size: 80%;
+}
+
+.mainHeader nav {
+	width: 73.5%;
+	float: left;
+	margin-left: 29%;
+	position: absolute;
+	
+}
+
+
+.title p {
+	text-align: center;
+	margin-top: 1%;
+
+}
+
+.title {
+	width: 30%;
+	float: left;
+}
+
+.searchbar, .tfnewsearch {
+		display: none;
+
+}
+
+}
+
+
+/*@media only screen and (min-width: 1000px) and (max-width: 1600px) {
+
+
+.body {
+	width: 80%;
+	font-size: 70%;
+}
+
+.searchbar, .tfnewsearch {
+	width: 45%;
+}
+
+#link {
+	width: 25%;
+	font-size: 75%;
+}
+
+}
+*/
 
 
 

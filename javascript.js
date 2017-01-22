@@ -337,6 +337,18 @@ document.getElementById("demo").innerHTML =  alert("Thank You " + nameval + " " 
 
 }
 
+// var f = document.getElementById("name").value;
+// var s = document.getElementById("sname").value;
+
+// var myObj, x, y;
+
+// myObj = { "name": f, "sname": s};
+
+// x = myObj.name;
+// y = myObj.sname;
+
+// document.getElementById("htwo2").innerHTML = "Contact Us " + x + " " + y;
+
 
 
 
