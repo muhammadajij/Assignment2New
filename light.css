@@ -4,7 +4,7 @@
 /*home*/
 
 body {
-	background:url(./images/pw_maze_black_2X.png) left top repeat;
+	background-color: #FFF;
 	/*color: #000305;*/
 	font-size: 95.5%; /*7.5% of 14px*/
 	font-family: Arial, 'Lucida Sans Unicode';
@@ -34,11 +34,10 @@ body {
   height: 34px;
   float: right;
   margin-top: -10%;
-
 }*/
 
 #livetimes {
-	color: #FFF;
+	color: #666;
 	float: left;
 	  margin-top: -10%;
 	  font-size: 30px;
@@ -110,7 +109,7 @@ input:checked + .slider:before {
 
 .lheader{
 	text-align:center;
-	background:url(./images/pw_maze_black_2X.png) left top repeat;
+	background-color: #FFF;
 	padding:280px 0;
 	height: 200px;
 	margin-top: -7%;
@@ -120,6 +119,7 @@ input:checked + .slider:before {
 .logo{
 	width: 25%;
 	margin:0 auto;
+	color: #000000;
 }
 
 
@@ -129,7 +129,7 @@ input:checked + .slider:before {
 	font-weight:400;
 	letter-spacing: -1px;
 	margin:0 0 22px 0 ;
-	color:#fff;
+	color:#666;
 }
 
 .we-create{
@@ -138,14 +138,14 @@ input:checked + .slider:before {
 }
 
 .we-create li{
-	color: #FFF;
+	color: #666;
 	list-style: none; /*gets rid of bullet points infont of the names*/
 }
 
 .link{
 	padding:15px 35px;
 	background:#7cc576;
-	color:#fff !important;
+	color:#666 !important;
 	font-size:16px;
 	font-weight:400;
 	font-family: 'Montserrat', sans-serif;
@@ -167,7 +167,7 @@ input:checked + .slider:before {
 .link:active, .link:focus {
 	background: #7cc576;
 	text-decoration:none;
-	color:#fff !important;
+	color:#666 !important;
 }
 
 
@@ -201,10 +201,10 @@ a:hover, a:H {
 
 .title {
 	font-weight: bold;
- 	text-shadow: 0 0 10px #FFF;  	
+ 	text-shadow: 0 0 10px #666;  	
 /* 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 */	float: left;
-	color: #FFF;
+	color: #666;
 	width: 20%;
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -218,7 +218,7 @@ a:hover, a:H {
 
 .title a p {
 	margin: 4% 0% 0% 0%;
-	color:#FFF;
+	color:#666;
 	float: left;
 }
 
@@ -228,7 +228,7 @@ a:hover, a:H {
 	float: left;
 	margin-top: 2%;
 	margin-left: 10%;
-	margin-right: 5%;
+	margin-right: 5%;ppo
 }
 
 /*.time {
@@ -257,13 +257,12 @@ a:hover, a:H {
 }
 
 .mainHeader nav {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	width: 42.5%;
 	margin-top: 2%;
 	margin-bottom: 2%;
 	margin-left: 1.25%;
 	float: left;
-	background:url(./images/pw_maze_black_2X.png) left top repeat;
+	background-color: #FFF;
 	height: 40px;
 
 	border-radius: 5px;
@@ -282,7 +281,7 @@ a:hover, a:H {
 }
 
 .mainHeader nav a:link, .mainHeader nav a:visited {
-	color:#fff !important;
+	color:#666 !important;
 	display: inline-block;
 	padding: 10px 25px;
 	height: 20px;
@@ -298,7 +297,7 @@ transition:all 0.3s ease-in-out;
 .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
 	text-decoration:none;
 	color:#7cc576 !important;
-	background:#fff;
+	background:#666;
 }
 
 .mainHeader nav ul li a {
@@ -323,7 +322,7 @@ transition:all 0.3s ease-in-out;
 }
 
 .topContent, .middleContent, .bottomContent {
-	background-color: #FFF;
+	background-color: #666;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding: 3% 5%;
 	margin-top: 2%;
@@ -336,7 +335,7 @@ transition:all 0.3s ease-in-out;
 	width: 22%;
 	float: left;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: #FFF; 
+	background-color: #666; 
 	border-radius: 5px;
 	-moz-border-radius: 5px; /*visible on mozilla browser*/
 	-webkit-border-radius: 5px;  /*visible on webkit based browser*/
@@ -366,7 +365,7 @@ transition:all 0.3s ease-in-out;
 .mainFooter p {
 	width: 92%;
 	margin: 1% auto;
-	color: #FFF;
+	color: #666;
 
 }
 
@@ -446,13 +445,13 @@ transition:all 0.3s ease-in-out;
 	border:2px solid gray;
 	border-radius:10px;
 	font-family:raleway;
-	background-color:#fff
+	background-color:#666
 }
 
 #htwo2 {
-	background-color:#666;
+	background-color:#fff;
 	padding:20px 35px;
-	color: #FFF;
+	color: #666;
 	margin:-10px -50px;
 	text-align:center;
 	border-radius:10px 10px 0 0;
@@ -506,9 +505,9 @@ margin-bottom:30px;
 	width:100%;
 	text-align:center;
 	display:block;
-	background-color:#666;
-	color:#FFF;
-	border:1px solid #666;
+	background-color:#fff;
+	color:#666;
+	border:1px solid #fff;
 	padding:10px 0;
 	font-size:20px;
 	cursor:pointer;
@@ -710,7 +709,7 @@ margin-bottom:30px;
 #SnavBottom p 
 {
     font:normal 200% Arial;
-    color:#fff;
+    color:#666;
     position:absolute;
     bottom:0;
     left:0;
@@ -721,7 +720,7 @@ margin-bottom:30px;
 
 #home{
 
-	color:#fff;
+	color:#666;
     position:absolute;
     bottom:0;
     right:0;
@@ -738,11 +737,11 @@ margin-bottom:30px;
 
 
 .grey-txt{
-	color: #666;
+	color: #fff;
 }
 
 .white-txt{
-	color: #fff; 
+	color: #666; 
 
 }
 

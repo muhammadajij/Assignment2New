@@ -1,6 +1,7 @@
 <!-- Muhammad Ajij - P13230501 -->
 
 
+
 // Home
 var images = ["./images/supportimage1.jpg"];
 // var caption = ["caption for slide1", "caption for slide2"];
@@ -308,7 +309,7 @@ document.getElementById('popupdiv').style.display = "none";
 
 // var nameval = document.getElementById('name').value;
 
-// var obj = JSON.parse({ "name": "document.getElementById('name').value" });
+// var obj = JSON.parse({ "name": document.getElementById('name').value });
 // document.getElementById("demo").innerHTML = "Hello " + obj.name;
 
 
@@ -350,7 +351,46 @@ document.getElementById("demo").innerHTML =  alert("Thank You " + nameval + " " 
 // document.getElementById("htwo2").innerHTML = "Contact Us " + x + " " + y;
 
 
+// function time() {
+//     var date = new Date();
+//     var time= date.toLocaleTimeString();
+//     document.getElementById("time").innerHTML = time;
+// }
+
+//timestamp
+function time() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('livetimes').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(time, 500);
+}
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
 
 
+// function checkToggle (){
+
+//   if(document.getElementById("val").value=="ON"){
+//     swapStyleSheet("./light.css")
+//     }
+
+//   else if(document.getElementById("val").value=="OFF"){
+//     swapStyleSheet("stylesheet.css")
+//   }
+// }
+
+function swapStyleSheet(sheet){
+   
+    document.getElementById("dark").setAttribute("href", sheet);
+
+   }
 
 
