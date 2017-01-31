@@ -120,7 +120,7 @@ input:checked + .slider:before {
 	width: 25%;
 	margin:0 auto;
 	color: #000000;
-}
+	}
 
 
 .hone{
@@ -170,7 +170,34 @@ input:checked + .slider:before {
 	color:#666 !important;
 }
 
+.supportlogo2 {
+	width: 11%;
+	float: left;
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-right: 5%;
 
+}
+
+
+
+.supportlogo {
+	background-image:url("./images/sblack.png");
+	background-repeat: none;
+    background-size: 250px 255px;
+
+
+	width: 80%;
+	height: 255px;
+	margin:0 auto;
+	-webkit-transition: -webkit-transform .5s ease-in-out;
+			transition: -webkit-transform .5s ease-in-out;
+}
+
+.supportlogo:hover {
+	-webkit-transform: rotate(360deg);
+    		transform: rotate(360deg);
+}
 
 a {
 	text-decoration: none;
@@ -222,14 +249,6 @@ a:hover, a:H {
 	float: left;
 }
 
-
-.supportlogo2 {
-	width: 11%;
-	float: left;
-	margin-top: 2%;
-	margin-left: 10%;
-	margin-right: 5%;ppo
-}
 
 /*.time {
 	float: left;

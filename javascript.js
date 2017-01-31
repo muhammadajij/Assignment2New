@@ -1,7 +1,6 @@
 <!-- Muhammad Ajij - P13230501 -->
 
 
-
 // Home
 var images = ["./images/supportimage1.jpg"];
 // var caption = ["caption for slide1", "caption for slide2"];
