@@ -382,10 +382,19 @@ transition:all 0.3s ease-in-out;
 }
 
 .mainFooter p {
-	width: 92%;
+	width: 50%;
 	margin: 1% auto;
-	color: #666;
+	color: #FFF;
+	margin-left: 1.5%;
+	margin-top: 0.7%;
 
+}
+
+.scrollbackup {
+	margin-top: -3%;
+	margin-right: 2%;
+	color: #FFF;
+	float: right;
 }
 
 .arrow, .arrowup {

@@ -90,11 +90,11 @@
 
 
 				<input id="name" name="name" placeholder="Please Enter Your First Name" type="text">
-				<input id="sname" name="name" placeholder="Please Enter Your Last Name" type="text">
+				<input id="sname" name="sname" placeholder="Please Enter Your Last Name" type="text">
 
 				<input  id="email" name="email" placeholder="Please Enter Your Email" type="text">
 				<textarea  id="msg" name="message" placeholder="How May We Help You?"></textarea>
-				<a href="javascript:%20check_empty()" onclick="myFunction()" id="submit">Send</a>
+				<a href="javascript:%20validateForm()" onclick="myFunction()" id="submit">Send</a>
 
 
 			</form>
@@ -104,7 +104,7 @@
 		
 		</div>
 
-			<div class="mainHeader">
+			<div id="mh" class="mainHeader">
 
 			<nav class=><ul>
 				<li class="active"><a href="Home.html"> <i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
@@ -192,10 +192,10 @@
 	
 	<div class="mainContent">
 		<div class="content">
-			<article class="topContent">
+			<article class="topContent" id="topContent">
 
-				<a class="arrow" href="#"> <i class="fa fa-arrow-circle-down fa-2x grey-txt" aria-hidden="true"></i> </a>
-				<a class="arrowup" href="#"> <i class="fa fa-arrow-circle-up fa-2x grey-txt" aria-hidden="true"></i> </a>
+				<a class="arrow" href="#topContent"> <i class="fa fa-arrow-circle-down fa-2x grey-txt" aria-hidden="true"></i> </a>
+				<a class="arrowup" href="#topContent"> <i class="fa fa-arrow-circle-up fa-2x grey-txt" aria-hidden="true"></i> </a>
  				
 				<header>
 					<h2><p title="First Post">First Post</p></h2>
@@ -210,10 +210,10 @@
 				</content>
 			</article>
 
-			<article class="middleContent">
+			<article class="middleContent" id="middleContent">
 
-				<a class="arrow2" href="#"> <i class="fa fa-arrow-circle-down fa-2x grey-txt" aria-hidden="true"></i> </a>
-				<a class="arrowup2" href="#"> <i class="fa fa-arrow-circle-up fa-2x grey-txt" aria-hidden="true"></i> </a>
+				<a class="arrow2" href="#middleContent"> <i class="fa fa-arrow-circle-down fa-2x grey-txt" aria-hidden="true"></i> </a>
+				<a class="arrowup2" href="#middleContent"> <i class="fa fa-arrow-circle-up fa-2x grey-txt" aria-hidden="true"></i> </a>
 
 				<header>
 					<h2><p href="#" title="Second Post">Second Post</p></h2>
@@ -228,10 +228,10 @@
 				</content>
 			</article>
 
-			<article class="bottomContent">
+			<article class="bottomContent" id="bottomContent">
 
-				<a class="arrow3" href="#"> <i class="fa fa-arrow-circle-down fa-2x grey-txt" aria-hidden="true"></i> </a>
-				<a class="arrowup3" href="#"> <i class="fa fa-arrow-circle-up fa-2x grey-txt" aria-hidden="true"></i> </a>
+				<a class="arrow3" href="#bottomContent"> <i class="fa fa-arrow-circle-down fa-2x grey-txt" aria-hidden="true"></i> </a>
+				<a class="arrowup3" href="#bottomContent"> <i class="fa fa-arrow-circle-up fa-2x grey-txt" aria-hidden="true"></i> </a>
 
 				<header>
 					<h2><p title="Third Post">Third Post</p></h2>
@@ -273,6 +273,7 @@
 
 		<footer class="mainFooter">
 			<p>Copyright &copy; 2017 Muhammad Ajij</p>
+			<a class="scrollbackup" href=#mh> <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
 		</footer>
 
 </div>

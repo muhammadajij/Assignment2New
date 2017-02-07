@@ -127,6 +127,23 @@ $(document).ready(function()
                 $(".arrowup").show(500);
                 $(".arrow").hide();
 
+                if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
 
             })
 
@@ -145,9 +162,28 @@ $(document).ready(function()
 
             $(".arrow2").click(function()
             {
+           if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
                 $(".detail2").show(500);
                 $(".arrowup2").show(500);
                 $(".arrow2").hide();
+
+       
             })
 
             $(".arrowup2").click(function()
@@ -164,9 +200,28 @@ $(document).ready(function()
 
             $(".arrow3").click(function()
             {
+
+            	      if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
                 $(".detail3").show(500);
                 $(".arrowup3").show(500);
                 $(".arrow3").hide();
+
             })
 
             $(".arrowup3").click(function()
@@ -254,16 +309,62 @@ $(document).ready(function()
             );
         });
 
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".scrollbackup").on('click', function() {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+
+});
+
+function validateForm() {
+    var w = document.forms["form"]["name"].value;
+    
+    var x = document.forms["form"]["sname"].value;
+    
+
+    var y = document.forms["form"]["email"].value;
+    
+
+    var z = document.forms["form"]["message"].value;
+   
+    if (x == "" || w == "" || y == "" || Z == "") {
+        alert("All Fields Must Be Filled Out");
+        return false;
+    }
+
+}
+
 // Validating Empty Field
-function check_empty() {
-if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
-alert("Fill All Fields !");
-} 
+// function check_empty() {
+// if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+// alert("Fill All Fields !");
+// } 
 // else {
 // document.getElementById('form').submit();
 // alert("Form Submitted Successfully...");
 //}
-}
+//}
+
 //Function To Display Popup
 function div_show() {
 //window.location.href='Home.html'
