@@ -13,6 +13,7 @@
 	<link id="dark" rel="stylesheet" href="style.css" type="text/css" />
 	
 
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 </head>
@@ -25,52 +26,61 @@
 
 
 	<div class="lheader" id="header"><!--header-start-->
-	<div class="container"></div>
+		<div class="container"></div>
 
-	<!-- <div class="toggle">
-	<p  id="livetimes"></p>	
-		<h2 class="theme">Theme Switch</h2>
-		<button onclick="swapStyleSheet('light.css')">Light Theme</button>
-		<button onclick="swapStyleSheet('style.css')">Dark Theme</button>
-   	</div> -->
-
-	<div class="toggle">
-		<p  id="livetimes"></p>
-		<div id="buttons">
+		<!-- <div class="toggle">
+		<p  id="livetimes"></p>	
+			<h2 class="theme">Theme Switch</h2>
 			<button onclick="swapStyleSheet('light.css')">Light Theme</button>
 			<button onclick="swapStyleSheet('style.css')">Dark Theme</button>
+	   	</div> -->
+
+		<div class="toggle">
+			<p  id="livetimes"></p>
+			<div id="buttons">
+				<button onclick="swapStyleSheet('light.css')">Light Theme</button>
+				<button onclick="swapStyleSheet('style.css')">Dark Theme</button>
+			</div>	
 		</div>	
-	</div>	
-	<div class="sl">
-    	<figure class="logo">
-    		<div class="supportlogo">
-        	<!-- <img class="supportlogo" src="./images/s.png" alt="">	 -->
-        	</div>
-        </figure>	
+		<div class="sl">
+	    	<figure class="logo">
+	    		<div class="supportlogo">
+	        	<!-- <img class="supportlogo" src="./images/s.png" alt="">	 -->
+	        	</div>
+	        </figure>	
 
-    </div>
-        <h1 class="hone">Welcome To Support Solutions</h1>
-        <ul class="we-create">
-        	<li>We are a support agency that loves crafting beautiful support related interfaces.</li>
-        </ul>
-            <a href="#" class="link" >Enter Site</a>
+	    </div>
+	        <h1 class="hone">Welcome To Support Solutions</h1>
+	        <ul class="we-create">
+	        	<li>We are a support agency that loves crafting beautiful support related interfaces.</li>
+	        </ul>
+	            <a href="#" class="link" >Enter Site</a>
 
- 	</div>           
+	 	</div>     
+
+	 	
+<!-- I got these buttons from simplesharebuttons.com -->
+<div id="share-buttons">  
+ 
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=http://www.supportsolutions.co.uk" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+     
+   <!--  <a href="javascript:;" onclick="window.print()">
+        <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+    </a>   -->
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=http://www.supportsolutions.co.uk&amp;text=Support%20Solution%20Applications&amp;hashtags=OneClickSolution" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+   
+</div>     
     </div>
 </header><!--header-end-->
 
-			<div class="title">
-				<img class="supportlogo2" src="./images/s.png" alt="">
-				<a href="#" id="land"><p>SUPPORT SOLUTIONS</p><a>
-			</div>
-
-			<div class="searchbar">
-				<form class="tfnewsearch" method="get" action="http://www.google.co.uk">
-				        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
-				</form>
-				<div class="tfclear"></div>
-			<!-- 	<div><p onload="time()" id="time"></p></div> -->
-			</div>
+			
 
   
 
@@ -106,17 +116,34 @@
 
 			<div id="mh" class="mainHeader">
 
-			<nav class=><ul>
+			<div class="title">
+				<img class="supportlogo2" src="./images/s.png" alt="">
+				<a href="#" id="land"><p>SUPPORT SOLUTIONS</p><a>
+			</div>
+
+			<div class="searchbar">
+				<form class="tfnewsearch" method="get" action="http://www.google.co.uk">
+				        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+				</form>
+				<div class="tfclear"></div>
+			<!-- 	<div><p onload="time()" id="time"></p></div> -->
+			</div>
+
+			<div>
+			<nav><ul>
 				<li class="active"><a href="Home.html"> <i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
 				<li><a href="About.html"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i> About</a></li>
 				<li><a  href="Portfolio.html"><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i> Portfolio</a></li>
 				<li><a  href="#" onclick="div_show()"><i class="fa fa-phone fa-lg"  aria-hidden="true"></i> Contact</a></li>
 			</ul></nav>
+			</div>
 
 			</div>			
 
+			<div class="slideshowdiv">
 			<img id="slideshow" src="./images/supportimage1.jpg"/>  <!-- need to correct the path -->
 			<br />
+			</div>
 
 			<!-- div id="caption">
 				caption for first slide
@@ -179,13 +206,7 @@
 				background: -moz-linear-gradient(top,  #FFF,  #FFF);
 			}
 
-			img {
-	  		 width: 100%;
-	   		 height: auto;
-	   		 display: block;
-	    	 margin: 0 auto;
-	    	 border-radius: 5px;
-			}
+			
 			</style>
 
 	</header>

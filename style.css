@@ -11,7 +11,7 @@ body {
 	line-height: 1.5;
 	text-align: left;
 	animation-name: fade;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -49,6 +49,26 @@ body {
 	margin-top: -10%;
 }
 
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+
+}
+
+#share-buttons {
+	margin-top: -10%;
+margin-left: 46.5%;
+width: 100%;
+animation-name: enter;
+	 animation-duration: 2s;
+position: relative;
+}
+
+
+
 /*.theme {
 	color: #FFF;
 	float: right;
@@ -71,6 +91,7 @@ body {
   -webkit-transition: .4s;
   transition: .4s;
 }
+
 
 
 .slider:before {
@@ -130,6 +151,15 @@ input:checked + .slider:before {
 	letter-spacing: -1px;
 	margin:0 0 22px 0 ;
 	color:#fff;
+	animation-name: title;
+	 animation-duration: 2s;
+    position: relative;
+}
+
+
+@keyframes title {
+    0%   {opacity:0; left: -200px; top:0px;}
+    100% {opacity:1; left: 0px; top:0px;}
 }
 
 .we-create{
@@ -137,9 +167,17 @@ input:checked + .slider:before {
 	margin:35px 0 55px;
 }
 
+@keyframes subheading {
+    0%   {opacity:0; right: -200px; bottom:0px;}
+    100% {opacity:1; right: 0px; top:0px;}
+}
+
 .we-create li{
 	color: #FFF;
 	list-style: none; /*gets rid of bullet points infont of the names*/
+	animation-name: subheading;
+	 animation-duration: 2s;
+    position: relative;
 }
 
 .link{
@@ -157,7 +195,16 @@ input:checked + .slider:before {
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
+	animation-name: enter;
+	 animation-duration: 2s;
+    position: relative;
 }
+
+@keyframes enter {
+    0%   {opacity:0; right: 0px; bottom: -200px;}
+    100% {opacity:1; right: 0px; bottom:0px;}
+}
+
 .link:hover {
 	text-decoration:none;
 	color:#7cc576 !important;
@@ -192,11 +239,13 @@ a:hover, a:H {
 	clear: both; /*no floating*/
 }
 
-/*.slideshow {
-	max-width 50px; //not working?
-	height auto;
-	margin 2% 0%;
-}*/
+#slideshow {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+}
 
 
 .title {
@@ -273,14 +322,20 @@ a:hover, a:H {
 	font-size: 95.5%;
 }
 
+.mainHeader {
+	width: 100%;
+	margin-top: -1%;
+	height: 60px;
+
+}
+
 .mainHeader nav {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	width: 42.5%;
+/*	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*/	width: 42.5%;
 	margin-top: 2%;
 	margin-bottom: 2%;
 	margin-left: 1.25%;
 	float: left;
-	background:url(./images/pw_maze_black_2X.png) left top repeat;
 	height: 40px;
 
 	border-radius: 5px;
