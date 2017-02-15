@@ -391,6 +391,9 @@ input:checked + .slider:before {
 	padding-bottom: 30px;
 	text-align: center;
 	padding-top: 30px;
+  animation-name: title;
+  animation-duration: 2s;
+  position: relative;
 }
 
 .page-title-new h2 {
@@ -420,6 +423,9 @@ input:checked + .slider:before {
 .aboutslider,
 .about-content {
 	padding: 60px 0;
+    animation-name: title;
+    animation-duration: 3s;
+    position: relative;
 }
 
 .about-content p {
@@ -1705,7 +1711,7 @@ ul.banner-social-buttons {
   .homepage-menu .navbar-toggle {
     margin: 5px 10px 5px !important;
   }
-  #mh .title {
+  #mh .title { /*two title classes has to be called this way so no confusion*/
     margin-top: 13px;
   }
   #mh .title a p {
@@ -1756,6 +1762,8 @@ ul.banner-social-buttons {
     margin: 0;
     width: 100%;
   }
+
+  
   .mainHeader nav a:link,
   .mainHeader nav a:visited {
     width: 100%;

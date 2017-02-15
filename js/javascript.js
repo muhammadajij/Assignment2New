@@ -240,13 +240,13 @@ $(document).ready(function()
       $("#slideshow").show();
 
       $(".sidebars").show();
-      $(".lheader").hide();
+      $(".lheader").hide(1000);
     });
 	
 	$(".pricing-menu").click(function() {
       $("#ppage").show();
      $("#mh").hide();
-      $(".lheader").hide();
+      $(".lheader").hide(1000);
     });
 	
 
