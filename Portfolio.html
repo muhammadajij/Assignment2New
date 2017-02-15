@@ -1,52 +1,76 @@
-﻿<!-- Muhammad Ajij - P13230501 -->
-
-
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>   
-<link rel="stylesheet" href="style.css" />
 
-    <title>Portfolio</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Support Solutions</title>
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+	<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/mystyle.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body onload="Load()">
 
-    <div id="slider">
-        <div id="imgs">
-            <!-- here you have to add the img tag -->
-            <img id="Img1" src="./images/supportimage1.jpg"/>
-            <img id="Img2" src="./images/supportimage2.jpg"/>
-            <img id="Img3" src="./images/supportimage2.jpg"/>
-         </div>
-        <!--Here is going to be the left right buttons, the info and the imgs shown-->
-        <div id="Snav">
-            <!-- here is the circles , showes the current img -->
-            <div id="SnavUp">
-                <div id="Scircles">
-                    <ul>
-                        <li id="S0"></li>
-                        <li id="S1"></li>
-                        <li id="S2"></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- the left and right button -->
-            <div id="SnavMiddle">
-                <a id="Sleft" onclick="prev()"><i class="fa fa-arrow-circle-left fa-4x" aria-hidden="true"></i>
-                <a id="Sright" onclick="next()"><i class="fa fa-arrow-circle-right fa-4x" aria-hidden="true"></i>            </div>
-            <!-- the info -->
-            <div id="SnavBottom">
-                <!-- here you have to add the p tag-->
+<body onload="time()" class="body">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
 
-                <p id="SP0">Support Image 1</p>  <a id="home" onclick="goBack()" ><i class="fa fa-home fa-4x white-txt" aria-hidden="true"></i></a>
-                <p id="SP1">Support Image 2</p> 
-                <p id="SP2">Support Image 3</p> 
-                
-            </div>
-        </div>
-    </div>
-        <script src="javascript.js"></script>
-        <script src="https://use.fontawesome.com/34223f476a.js"></script>
-        
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="images/portfolio1.jpg" alt="...">
+				<div class="carousel-caption">
+					<h2>Support Image 1</h2>
+
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/portfolio2.jpg" alt="...">
+				<div class="carousel-caption">
+					<h2>Support Image 2</h2>
+
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/portfolio1.jpg" alt="...">
+				<div class="carousel-caption">
+					<h2>Support Image 3</h2>
+
+				</div>
+			</div>
+			
+			<a onclick="goBack()" id="home" style="position:absolute; bottom:0; right:0;"><i class="fa fa-home fa-4x white-txt" aria-hidden="true"></i></a>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
 </body>
+
 </html>

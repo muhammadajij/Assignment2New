@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Support Solutions</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link id="light" rel="stylesheet" href="css/light.css" type="text/css" />
+	<link href="css/mystyle.css" rel="stylesheet">
+	<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<!-- Theme CSS -->
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body onload="time()" class="body">
+	<div id=animation>
+		<!-- Navigation -->
+		<div class="lheader" id="header">
+			<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Themes <i class="fa fa-bars"></i>
+                </button>
+						<a class="navbar-brand page-scroll" href="#page-top">
+							<span class="light" id="livetimes"><i class="fa fa-play-circle"></i><p id="livetimes"></p></span>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+						<div class="btn-group btn-toggle">
+							<button onclick="swapStyleSheet('css/light.css')" class="btn btn-md btn-default custom-cls">Light Theme</button>
+							<button onclick="swapStyleSheet('css/dark.css')" class="btn btn-md btn-primary custom-cls active">Dark Theme</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Intro Header -->
+			<header class="intro">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="lheader" id="header">
+								<div class="sl">
+									<figure class="logo">
+										<div class="supportlogo">
+											<!-- <img class="supportlogo" src="./images/s.png" alt="">	 -->
+										</div>
+									</figure>
+								</div>
+
+								<h1 class="hone">Welcome To Support Solutions</h1>
+								<ul class="we-create">
+									<li>We are a support agency that loves crafting beautiful support related interfaces.</li>
+								</ul>
+								<a href="javascript:void(0);" class="link">Enter Site</a>
+							</div>
+
+							<div id="share-buttons">
+								<!-- Facebook -->
+								<a href="http://www.facebook.com/sharer.php?u=http://www.supportsolutions.co.uk" target="_blank">
+									<img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+								</a>
+								<a href="https://twitter.com/share?url=http://www.supportsolutions.co.uk&amp;text=Support%20Solution%20Applications&amp;hashtags=OneClickSolution" target="_blank">
+									<img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+
+
+		<div id="mh" class="mainHeader">
+			<div class="container custom-theme-bg">
+				<!--  Header Section-->
+				<div class="row">
+					<div class="col-md-3 col-xs-8">
+						<div class="title">
+							<img class="supportlogo2" src="images/s.png" alt="">
+							<a href="index.html" class="land">
+								<p>SUPPORT SOLUTIONS</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-9">
+						<nav class="navbar navbar-default custom-bg homepage-menu" role="navigation">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar-collapse">
+								  <span class="sr-only">Toggle navigation</span>
+								  <span class="icon-bar"></span>
+								  <span class="icon-bar"></span>
+								  <span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="collapse navbar-collapse" id="demo-navbar-collapse">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="javascript:void(0);" class="home-tab"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
+									<li><a href="portfolio.html"><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i> Portfolio</a></li>
+									<li><a href="javascript:void(0);" class="pricing-menu"><i class="fa fa-th-large" aria-hidden="true"></i> Pricing</a></li>
+									<li><a href="#" onclick="div_show()"><i class="fa fa-phone fa-lg"  aria-hidden="true"></i> Contact</a></li>
+								</ul>
+
+								<form class="navbar-form customnavform navbar-left pull-right" role="search">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search">
+										<span class="input-group-btn">
+										  <button type="submit" class="btn btn-default custom-search-button">Search</button>     
+										</span>
+									</div>
+								</form>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<section id="banner-new" class="top-banner">
+				<div class="container custom-theme-bg">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="slideshowdiv">
+								<img id="slideshow" src="images/supportimage1.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-title">
+				<div class="container brdr-btm custom-theme-bg">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-title-new">
+								<h2>About Us</h2>
+								<span>Something About Us</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about-box" class="about-section">
+				<div class="container custom-theme-bg">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="aboutslider">
+								<div id="myCarousel" class="carousel slide" data-ride="carousel">
+									<!-- Wrapper for slides -->
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img class="img-responsive" src="images/27.jpg" height="500">
+
+										</div>
+										<div class="item">
+											<img class="img-responsive" src="images/25.jpg" height="500">
+
+										</div>
+
+									</div>
+
+									<ol class="carousel-indicators">
+										<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+										<li data-target="#myCarousel" data-slide-to="1"></li>
+
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-8">
+							<div class="about-content">
+								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+
+								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="about-box">
+								<h2>What we do?</h2>
+								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum.</p>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="about-box">
+								<h2>Our mission</h2>
+								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum.</p>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="about-box">
+								<h2>Our Goals</h2>
+								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-title-new">
+								<h2>Our Great Team</h2>
+								<span>Whom we have with us</span>
+							</div>
+
+						</div>
+						<div class="col-sm-3">
+							<div class="team-members">
+								<div class="team-avatar">
+									<img class="img-responsive" src="http://keenthemes.com/assets/bootsnipp/member1.png" alt="">
+								</div>
+								<div class="team-desc">
+									<h4>John Doe</h4>
+									<span>Marketing</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="team-members">
+								<div class="team-avatar">
+									<img class="img-responsive" src="http://keenthemes.com/assets/bootsnipp/member2.png" alt="">
+								</div>
+								<div class="team-desc">
+									<h4>Melisa Doe</h4>
+									<span>Founder</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="team-members">
+								<div class="team-avatar">
+									<img class="img-responsive" src="http://keenthemes.com/assets/bootsnipp/member3.png" alt="">
+								</div>
+								<div class="team-desc">
+									<h4>Alex Atkinson</h4>
+									<span>Director</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="team-members">
+								<div class="team-avatar">
+									<img class="img-responsive" src="http://keenthemes.com/assets/bootsnipp/member3.png" alt="">
+								</div>
+								<div class="team-desc">
+									<h4>Alex Atkinson</h4>
+									<span>Director</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<div class="container custom-theme-bg">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="mainFooter">
+								<p>Copyright &copy; 2017 Muhammad Ajij</p>
+								<a class="scrollbackup" href=#mh> <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- About Section -->
+		</div>
+
+
+		<div id="ppage" class="mainHeader">
+			<div class="container custom-theme-bg">
+				<!--  Header Section-->
+				<div class="row">
+					<div class="col-md-3 col-xs-8">
+						<div class="title">
+							<img class="supportlogo2" src="images/s.png" alt="">
+							<a href="index.html" class="land">
+								<p>SUPPORT SOLUTIONS</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-9">
+						<nav class="navbar navbar-default custom-bg homepage-menu" role="navigation">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar-collapse1">
+								  <span class="sr-only">Toggle navigation</span>
+								  <span class="icon-bar"></span>
+								  <span class="icon-bar"></span>
+								  <span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="collapse navbar-collapse" id="demo-navbar-collapse1">
+								<ul class="nav navbar-nav">
+									<li><a href="javascript:void(0);" class="home-tab"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
+									<li><a href="portfolio.html"><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i> Portfolio</a></li>
+									<li class="active"><a href="javascript:void(0);" class="pricing-menu"><i class="fa fa-th-large" aria-hidden="true"></i> Pricing</a></li>
+									<li><a href="#" onclick="div_show()"><i class="fa fa-phone fa-lg"  aria-hidden="true"></i> Contact</a></li>
+								</ul>
+
+								<form class="navbar-form customnavform navbar-left pull-right" role="search">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search">
+										<span class="input-group-btn">
+										  <button type="submit" class="btn btn-default custom-search-button">Search</button>     
+										</span>
+									</div>
+								</form>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<section id="banner-new" class="top-banner">
+				<div class="container custom-theme-bg">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="slideshowdiv">
+								<img id="slideshow" src="images/supportimage1.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-title">
+				<div class="container brdr-btm custom-theme-bg">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-title-new">
+								<h2>Pricing</h2>
+								<span>Simple pricing. No Hidden costs.</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="pricing-new" class="pricing-box">
+				<div class="container custom-theme-bg">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 fade-in one">
+							<div class="price_column price_table text-center">
+								<div class="row price_heading">
+									<div class="col-sm-12">
+										<h3>GOLD</h3>
+										<h1><b>£29</b> /mo</h1>
+									</div>
+								</div>
+								<div class="row">
+									<ul class="price_lines text-center">
+										<li class="price_linea">1 Website</li>
+										<li class="price_lineb">1 Gb Storage</li>
+										<li class="price_linea">10 GB Bandwith</li>
+										<li class="price_lineb">3 Month Support</li>
+										<li class="price_linea">Unlimited Sub-Domains</li>
+										<li class="price_lineb">5 Database</li>
+										<li class="price_linea">Full Page Site Available</li>
+									</ul>
+								</div>
+								<div class="row price_button">
+									<button class="btn btn-default btn-md">SIGN UP</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 fade-in two">
+							<div class="price_column price_table text-center">
+								<div class="row price_heading">
+									<div class="col-sm-12">
+										<h3>GOLD</h3>
+										<h1><b>£29</b> /mo</h1>
+									</div>
+								</div>
+								<div class="row">
+									<ul class="price_lines text-center">
+										<li class="price_linea">1 Website</li>
+										<li class="price_lineb">1 Gb Storage</li>
+										<li class="price_linea">10 GB Bandwith</li>
+										<li class="price_lineb">3 Month Support</li>
+										<li class="price_linea">Unlimited Sub-Domains</li>
+										<li class="price_lineb">5 Database</li>
+										<li class="price_linea">Full Page Site Available</li>
+									</ul>
+								</div>
+								<div class="row price_button">
+									<button class="btn btn-default btn-md">SIGN UP</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 fade-in three">
+							<div class="price_column price_table text-center">
+								<div class="row price_heading">
+									<div class="col-sm-12">
+										<h3>PLATINUM</h3>
+										<h1><b>£39</b> /mo</h1>
+									</div>
+								</div>
+								<div class="row">
+									<ul class="price_lines text-center">
+										<li class="price_linea">1 Website</li>
+										<li class="price_lineb">1 Gb Storage</li>
+										<li class="price_linea">10 GB Bandwith</li>
+										<li class="price_lineb">3 Month Support</li>
+										<li class="price_linea">Unlimited Sub-Domains</li>
+										<li class="price_lineb">5 Database</li>
+										<li class="price_linea">Full Page Site Available</li>
+									</ul>
+								</div>
+								<div class="row price_button">
+									<button class="btn btn-default btn-md">SIGN UP</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<div class="container custom-theme-bg">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="mainFooter">
+								<p>Copyright &copy; 2017 Muhammad Ajij</p>
+								<a class="scrollbackup" href=#mh> <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<!-- About Section -->
+		</div>
+		<!--
+		<div id="mh" class="mainHeader">
+			<div class="container white-bg">
+				  Header Section
+				<div class="row">
+					<div class="col-md-3 col-xs-8">
+						<div class="title">
+							<img class="supportlogo2" src="./images/s.png" alt="">
+							<a href="#" id="land">
+								<p>SUPPORT SOLUTIONS</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-9">
+						<nav class="navbar navbar-default custom-bg homepage-menu" role="navigation">
+
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar-collapse">
+								  <span class="sr-only">Toggle navigation</span>
+								  <span class="icon-bar"></span>
+								  <span class="icon-bar"></span>
+								  <span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="collapse navbar-collapse" id="demo-navbar-collapse">
+
+								<ul class="nav navbar-nav">
+									<li class="active">
+										<a href="index.html"> <i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a>
+									</li>
+									<li><a href="about.html"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i> About</a></li>
+									<li><a href="portfolio.html"><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i> Portfolio</a></li>
+									<li><a href="pricing.html"><i class="fa fa-th-large" aria-hidden="true"></i> Pricing</a></li>
+									<li><a href="#" onclick="div_show()"><i class="fa fa-phone fa-lg"  aria-hidden="true"></i> Contact</a></li>
+								</ul>
+
+								<form class="navbar-form customnavform navbar-left pull-right" role="search">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search">
+										<span class="input-group-btn">
+										  <button type="submit" class="btn btn-default custom-search-button">Search</button>                
+										</span>
+									</div>
+								</form>
+							</div>
+
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<section id="banner-new">
+				<div class="container white-bg">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="slideshowdiv">
+								<img id="slideshow" src="images/supportimage1.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<main>
+				<div class="container white-bg">
+					<div class="row">
+						<div class="col-md-9">
+							<div id="content" class="mainContent">
+								<article class="topContent" id="topContent">
+									<a class="arrow" href="javascript:void(0);"> <i class="fa fa-arrow-circle-down fa-2x grey-txt" aria-hidden="true"></i> </a>
+									<a class="arrowup" href="javascript:void(0);"> <i class="fa fa-arrow-circle-up fa-2x grey-txt" aria-hidden="true"></i> </a>
+									<header>
+										<h2>
+											<p title="First Post">Who we are?</p>
+										</h2>
+									</header>
+
+									<footer>
+										<p class="postinfo">Post One</p>
+									</footer>
+									<content class="detail">
+										<p> Support Solutions is a highly regarded and influential support firm with a huge reputation. We have effected and changed the way support queries are controlled and we continue to accurately predict and influence this mechanism. </p>
+									</content>
+								</article>
+
+								<article class="middleContent" id="middleContent">
+									<a class="arrow2" href="javascript:void(0);"> <i class="fa fa-arrow-circle-down fa-2x grey-txt" aria-hidden="true"></i> </a>
+									<a class="arrowup2" href="javascript:void(0);"> <i class="fa fa-arrow-circle-up fa-2x grey-txt" aria-hidden="true"></i> </a>
+									<header>
+										<h2>
+											<p title="First Post">Second Post</p>
+										</h2>
+									</header>
+
+									<footer>
+										<p class="postinfo">Post One</p>
+									</footer>
+									<content class="detail2">
+										<p> Support Solutions is a highly regarded and influential support firm with a huge reputation. We have effected and changed the way support queries are controlled and we continue to accurately predict and influence this mechanism. </p>
+									</content>
+								</article>
+
+								<article class="bottomContent" id="bottomContent">
+									<a class="arrow3" href="javascript:void(0);"> <i class="fa fa-arrow-circle-down fa-2x grey-txt" aria-hidden="true"></i> </a>
+									<a class="arrowup3" href="javascript:void(0);"> <i class="fa fa-arrow-circle-up fa-2x grey-txt" aria-hidden="true"></i> </a>
+									<header>
+										<h2>
+											<p title="First Post">Third Post</p>
+										</h2>
+									</header>
+
+									<footer>
+										<p class="postinfo">Post three</p>
+
+									</footer>
+									<content class="detail3">
+										<p> Support Solutions is a highly regarded and influential support firm with a huge reputation. We have effected and changed the way support queries are controlled and we continue to accurately predict and influence this mechanism. </p>
+									</content>
+								</article>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div id="sidebar" class="sidebar">
+								<aside class="top-sidebar">
+									<h1>hello</h1>
+									<p>this is content</p>
+								</aside>
+								<aside class="middle-sidebar">
+									<h1>hello</h1>
+									<p>this is content</p>
+								</aside>
+								<aside class="bottom-sidebar">
+									<h1>hello</h1>
+									<p>this is content</p>
+								</aside>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer>
+				<div class="container white-bg">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="mainFooter">
+								<p>Copyright &copy; 2017 Muhammad Ajij</p>
+								<a class="scrollbackup" href=#mh> <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+</div>
+-->
+		<!-- About Section -->
+	</div>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Plugin JavaScript -->
+
+	<script src="js/javascript.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.custom-cls').click(function() {
+				if ($('this').hasClass('btn-default')) {
+					$('this').removeClass('btn-default');
+
+				} else {
+
+				}
+			});
+		});
+
+	</script>
+	<div id="contactbody">
+		<div id="popupdiv">
+			<!-- Popup Div Starts Here -->
+			<div id="popupContact">
+				<!-- Contact Us Form -->
+				<form action="#" id="cform" method="post" name="form">
+					<a id="close" href="#" onclick="div_hide()"><i class="fa fa-times-circle-o fa-2x white-txt" aria-hidden="true"></i></a>
+					<h2 id="htwo2">Contact Us</h2>
+					<hr>
+
+
+					<input id="name" name="name" placeholder="Please Enter Your First Name" type="text">
+					<input id="sname" name="sname" placeholder="Please Enter Your Last Name" type="text">
+
+					<input id="email" name="email" placeholder="Please Enter Your Email" type="text">
+					<textarea id="msg" name="message" placeholder="How May We Help You?"></textarea>
+					<a href="javascript:%20validateForm()" onclick="myFunction()" id="submit">Send</a>
+				</form>
+			</div>
+			<!-- Popup Div Ends Here -->
+		</div>
+	</div>
+</body>
+
+</html>

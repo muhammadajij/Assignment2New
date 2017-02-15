@@ -1,8 +1,7 @@
-<!-- Muhammad Ajij - P13230501 -->
 
 
 // Home
-var images = ["./images/supportimage1.jpg"];
+var images = ["../images/supportimage1.jpg"];
 // var caption = ["caption for slide1", "caption for slide2"];
 
 var imageNumber = 0;
@@ -102,7 +101,7 @@ function Effect() {
 
 //slideshow home button
 function home() {
-  window.location.href = 'Home.html';
+  window.location.href = 'index.html';
 
 }
 
@@ -223,7 +222,7 @@ $(document).ready(function()
 
     );
 
-    $(".mainHeader").hide();
+    $("#mh").hide();
     $(".mainContent").hide();
     $(".sidebars").hide();
     $(".title").hide();
@@ -234,31 +233,42 @@ $(document).ready(function()
 
 
     $(".link").click(function() {
-      $(".mainHeader").show(300);
-      $(".mainContent").show(500);
-      $(".title").show(300);
-      $(".searchbar").show(300);
-      $("#slideshow").show(300);
+      $("#mh").show();
+      $(".mainContent").show();
+      $(".title").show();
+      $(".searchbar").show();
+      $("#slideshow").show();
 
-      $(".sidebars").show(500);
-      $(".lheader").hide(1000);
-
-
+      $(".sidebars").show();
+      $(".lheader").hide();
     });
-
-    $("#land").click(function() {
-
-      $(".mainHeader").hide();
-      $(".mainContent").hide();
-      $(".title").hide();
-      $(".searchbar").hide();
-      $("#slideshow").hide();
-
-      $(".sidebars").hide();
-      $(".lheader").show(800);
-
-
+	
+	$(".pricing-menu").click(function() {
+      $("#ppage").show();
+     $("#mh").hide();
+      $(".lheader").hide();
     });
+	
+
+//    $("#land").click(function() {
+//
+//      $(".mainHeader").hide();
+//      $(".mainContent").hide();
+//      $(".title").hide();
+//      $(".searchbar").hide();
+//      $("#slideshow").hide();
+//
+//      $(".sidebars").hide();
+//      $(".lheader").show(800);
+//    });
+	
+	$(".home-tab").click(function() {
+		 $("#ppage").hide();
+		$("#mh").show();
+	});
+	
+	
+	
 
 
     // $(".port").click(function()
@@ -278,19 +288,19 @@ $(document).ready(function()
     // }
     // );
 
-    $("#home").click(function() {
-
-      $(".mainHeader").show(200);
-      $(".mainContent").show(1500);
-      $(".title").show(900);
-      $(".searchbar").show(100);
-      $("#slideshow").show(1100);
-
-      $(".sidebars").show(2000);
-      $(".lheader").hide();
-
-
-    });
+//    $("#home").click(function() {
+//
+//      $("#mh").show(200);
+//      $(".mainContent").show(1500);
+//      $(".title").show(900);
+//      $(".searchbar").show(100);
+//      $("#slideshow").show(1100);
+//
+//      $(".sidebars").show(2000);
+//      $(".lheader").hide();
+//
+//
+//    });
   });
 
 $(document).ready(function() {
@@ -465,7 +475,7 @@ function checkTime(i) {
 // function checkToggle (){
 
 //   if(document.getElementById("val").value=="ON"){
-//     swapStyleSheet("./light.css")
+//     swapStyleSheet("../light.css")
 //     }
 
 //   else if(document.getElementById("val").value=="OFF"){
@@ -475,7 +485,7 @@ function checkTime(i) {
 
 function swapStyleSheet(sheet) {
 
-  document.getElementById("dark").setAttribute("href", sheet);
+  document.getElementById("light").setAttribute("href", sheet);
 
 }
 
