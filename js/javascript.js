@@ -229,6 +229,8 @@ $(document).ready(function()
     $(".searchbar").hide();
     $("#slideshow").hide();
     $(".lheader").show();
+    $("#cpage").hide();
+
 
 
 
@@ -245,6 +247,8 @@ $(document).ready(function()
 	
 	$(".pricing-menu").click(function() {
       $("#ppage").show();
+           $("#cpage").hide();
+
      $("#mh").hide();
       $(".lheader").hide(1000);
     });
@@ -264,10 +268,19 @@ $(document).ready(function()
 	
 	$(".home-tab").click(function() {
 		 $("#ppage").hide();
+         $("#cpage").hide();
+
 		$("#mh").show();
+
 	});
 	
-	
+	$(".contact-tab").click(function() {
+     $("#ppage").hide();
+         $("#cpage").show();
+
+    $("#mh").hide();
+
+  });
 	
 
 
@@ -500,4 +513,37 @@ function goBack() {
 //     }
 // }
 // );
+
+  function Loadgooglemaps() {
+    var LatLong = new google.maps.LatLng(52.6294673,-1.1380354);
+    var Options = {
+      zoom: 18,
+      center: LatLong,
+      disableDefaultUI: true,
+      panControl: true,
+      zoomControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.DEFAULT
+      },
+
+      mapTypeControl: true,
+      mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+      },
+      streetViewControl: true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+    var map = new google.maps.Map(document.getElementById("Googlemaps"), Options);
+    var markericon = new google.maps.Marker({
+      position: LatLong,
+      map: map,
+      title:"le1 9bh"
+    });
+    var infowindow = new google.maps.InfoWindow({
+      content: "De Montfort University"
+      });
+      google.maps.event.addListener(markericon, "click", function() {
+        infowindow.open(map, markericon);
+      });
+  }
 
