@@ -545,5 +545,16 @@ function goBack() {
       google.maps.event.addListener(markericon, "click", function() {
         infowindow.open(map, markericon);
       });
+
+
+      var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('livetimes').innerHTML =
+    h + ":" + m + ":" + s;
+  var t = setTimeout(time, 500);
   }
 
