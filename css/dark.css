@@ -69,6 +69,7 @@ html {
   to {
     opacity: 1;
   }
+  
 }
 
 .carousel-inner h3 {
@@ -538,6 +539,7 @@ input:checked + .slider:before {
 	padding: 10px;
 	background-color: #7cc576 !important;
 	width: 100%;
+  color: #FFF;
 }
 
 .price_table {
