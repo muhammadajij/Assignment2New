@@ -1776,9 +1776,10 @@ display: flex;
 }
 
 @media (max-width: 767px) {
-    .page-title-new h2::after {
+  .page-title-new h2::after {
     left: 38.5%;
   }
+  
   #contact-new {
 display: flex;
     align-items: center;  }
