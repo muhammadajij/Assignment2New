@@ -591,6 +591,14 @@ input:checked + .slider:before {
   margin: 0 auto;
 }
 
+#Googlemaps {
+        width: 550px;
+        height: 470px;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: grey;
+      }
+
 .hone {
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
@@ -873,6 +881,10 @@ margin: 0 3px 0;
 }
 
 #ppage {
+  display: none;
+}
+
+#cpage {
   display: none;
 }
 
@@ -1438,6 +1450,10 @@ float:left;
   padding: 0;
 }
 
+.contact-box {
+  padding: 0;
+}
+
 #slideshow,
 .slideshowdiv {
   display: block !important;
@@ -1604,6 +1620,10 @@ float:left;
   #ppage .title a p {
     font-size: 21px;
   }
+
+  #cpage .title a p {
+    font-size: 21px;
+  }
   .homepage-menu .navbar-toggle {
     margin: 15px 10px 0 !important;
   }
@@ -1612,6 +1632,16 @@ float:left;
     z-index: 9;
   }
   #ppage .navbar-header {
+    background: #7cc576;
+  }
+  .homepage-menu .navbar-toggle {
+    margin: 15px 10px 0 !important;
+  }
+  #cpage .title {
+    position: relative;
+    z-index: 9;
+  }
+  #cpage .navbar-header {
     background: #7cc576;
   }
   .topContent,
@@ -1694,6 +1724,10 @@ float:left;
     margin-bottom: 0;
     margin-top: 5px;
   }
+  #cpage .title {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
   .mainHeader nav ul {
     border-bottom: 0;
     margin: 0;
@@ -1722,6 +1756,7 @@ float:left;
     height: 400px;
     margin-top: 250px;
   }
+  
 }
 
 ul.banner-social-buttons {
@@ -1732,11 +1767,24 @@ ul.banner-social-buttons {
   ul.banner-social-buttons {
     margin-top: 15px;
   }
+  #Googlemaps {
+    display: none;
+  }
+  #contact-new {
+display: flex;
+    align-items: center;  }
 }
 
 @media (max-width: 767px) {
     .page-title-new h2::after {
     left: 38.5%;
+  }
+  #contact-new {
+display: flex;
+    align-items: center;  }
+
+  #Googlemaps {
+    display: none;
   }
   .price_table {
     margin-bottom: 0px;
@@ -1756,6 +1804,13 @@ ul.banner-social-buttons {
     margin-top: 13px;
   }
   #ppage .title a p {
+    font-size: 14px;
+    margin: 3% 0% 0% 0%;
+  }
+   #cpage .title {
+    margin-top: 13px;
+  }
+  #cpage .title a p {
     font-size: 14px;
     margin: 3% 0% 0% 0%;
   }

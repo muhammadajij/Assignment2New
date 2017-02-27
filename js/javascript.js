@@ -514,47 +514,59 @@ function goBack() {
 // }
 // );
 
-  function Loadgooglemaps() {
-    var LatLong = new google.maps.LatLng(52.6294673,-1.1380354);
-    var Options = {
-      zoom: 18,
-      center: LatLong,
-      disableDefaultUI: true,
-      panControl: true,
-      zoomControl: true,
-      zoomControlOptions: {
-        style: google.maps.ZoomControlStyle.DEFAULT
-      },
+  // function Loadgooglemaps() {
+  //   var LatLong = new google.maps.LatLng(52.6294673,-1.1380354);
+  //   var Options = {
+  //     zoom: 10,
+  //     center: LatLong,
+  //     disableDefaultUI: true,
+  //     panControl: true,
+  //     zoomControl: true,
+  //     zoomControlOptions: {
+  //       style: google.maps.ZoomControlStyle.DEFAULT
+  //     },
 
-      mapTypeControl: true,
-      mapTypeControlOptions: {
-        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
-      },
-      streetViewControl: true,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+  //     mapTypeControl: true,
+  //     mapTypeControlOptions: {
+  //       style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+  //     },
+  //     streetViewControl: true,
+  //     mapTypeId: google.maps.MapTypeId.ROADMAP
+  //     }
+  //   var map = new google.maps.Map(document.getElementById("Googlemaps"), Options);
+  //   var markericon = new google.maps.Marker({
+  //     position: LatLong,
+  //     map: map,
+  //     title:"le1 9bh"
+  //   });
+  //   var infowindow = new google.maps.InfoWindow({
+  //     content: "De Montfort University"
+  //     });
+  //     google.maps.event.addListener(markericon, "click", function() {
+  //       infowindow.open(map, markericon);
+  //     });
+
+
+  //     var today = new Date();
+  // var h = today.getHours();
+  // var m = today.getMinutes();
+  // var s = today.getSeconds();
+  // m = checkTime(m);
+  // s = checkTime(s);
+  // document.getElementById('livetimes').innerHTML =
+  //   h + ":" + m + ":" + s;
+  // var t = setTimeout(time, 500);
+  // }
+
+function initMap() {
+        var latlang = {lat: 52.6294673, lng: -1.1380354};
+        var map = new google.maps.Map(document.getElementById("Googlemaps"), {
+          zoom: 15,
+          center: {lat: 52.633200, lng: -1.147427}
+        });
+
+          var marker = new google.maps.Marker({
+          position: latlang,
+          map: map
+        });
       }
-    var map = new google.maps.Map(document.getElementById("Googlemaps"), Options);
-    var markericon = new google.maps.Marker({
-      position: LatLong,
-      map: map,
-      title:"le1 9bh"
-    });
-    var infowindow = new google.maps.InfoWindow({
-      content: "De Montfort University"
-      });
-      google.maps.event.addListener(markericon, "click", function() {
-        infowindow.open(map, markericon);
-      });
-
-
-      var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('livetimes').innerHTML =
-    h + ":" + m + ":" + s;
-  var t = setTimeout(time, 500);
-  }
-
